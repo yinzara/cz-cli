@@ -4,7 +4,7 @@
   "description": "Git commit, but play nice with conventions.",
   "main": "dist/index.js",
   "scripts": {
-    "check-coverage": "nyc check-coverage --statements 80 --branches 80 --functions 80 --lines 80 ",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "commit": "node bin/git-cz",
     "build": "babel src --out-dir dist",
     "build:watch": "babel --watch src --out-dir dist",
@@ -84,7 +84,6 @@
   "nyc": {
     "extends": "@istanbuljs/nyc-config-babel",
     "exclude": [
-      "src/cli",
       "test"
     ]
   },
